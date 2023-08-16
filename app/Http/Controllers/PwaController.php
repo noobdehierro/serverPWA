@@ -12,7 +12,14 @@ class PwaController extends Controller
      */
     public function index()
     {
-        return 'hola';
+        $success = [
+            "status" => "success",
+            "data" => [
+                "name" => 'Jorge Leon',
+                "adeudo" => 50000
+            ]
+        ];
+        return response()->json($success);
     }
 
     /**
